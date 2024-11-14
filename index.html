@@ -3,61 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coming Soon | Sachin Kharel</title>
-    <style>
-      /* Basic Reset */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Arial", sans-serif;
-      }
-
-      /* Body Styling */
-      body {
-        background: #181818;
-        color: #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        text-align: center;
-        flex-direction: column;
-        overflow: hidden;
-      }
-
-      /* Main Title */
-      h1 {
-        font-size: 3em;
-        color: #00d8ff;
-        margin-bottom: 0.5em;
-        letter-spacing: 1px;
-      }
-
-      /* Subtitle */
-      p {
-        font-size: 1.2em;
-        color: #b3b3b3;
-        margin-bottom: 2em;
-      }
-
-      /* Subtle Fade-in Animation */
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      h1,
-      p {
-        animation: fadeIn 2s ease;
-      }
-    </style>
+    <title>Your Name - Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Coming Soon</h1>
-    <p>Exciting updates are on the way! Stay tuned.</p>
+    <!-- Navigation -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle">🌙</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Your Name</h1>
+      <p>Short, impactful tagline about who you are and what you do.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        A brief description of your background, skills, and what makes you
+        unique.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>Description of the project.</p>
+        </div>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>Description of the project.</p>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+      <h2>Blog</h2>
+      <div class="blog-list">
+        <div class="blog-post">
+          <h3>Blog Post Title</h3>
+          <p>Snippet of the blog post...</p>
+        </div>
+        <div class="blog-post">
+          <h3>Another Blog Post</h3>
+          <p>Snippet of the blog post...</p>
+        </div>
+        <!-- Add more blog posts as needed -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Your Name</p>
+      <div class="social-links">
+        <a href="#">Twitter</a> | <a href="#">LinkedIn</a> |
+        <a href="#">GitHub</a>
+      </div>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script src="script.js"></script>
   </body>
 </html>
