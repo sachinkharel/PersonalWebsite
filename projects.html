@@ -1,22 +1,22 @@
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sachin Kharel</title>
+    <title>Projects - Steve Schoger</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
   </head>
-
   <body class="antialiased">
     <div class="max-w-5xl mx-auto px-6 md:px-8">
-      <header class="flex justify-between items-center mt-10">
+      <!-- Navbar -->
+      <div class="flex justify-between items-center mt-10">
         <h1
           class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-900 font-medium md:font-normal leading-none"
         >
-          <a href="/">Sachin Kharel</a>
+          <a href="/">Steve Schoger</a>
         </h1>
         <div class="block lg:hidden">
           <button type="button">
@@ -34,34 +34,39 @@
             </svg>
           </button>
         </div>
-      </header>
-      <nav class="lg:block hidden mt-10">
+      </div>
+      <div class="lg:block hidden">
         <div
-          class="w-full block lg:flex lg:justify-between lg:border-b lg:border-gray-400 text-gray-700 font-medium lg:text-lg"
+          class="w-full block lg:flex lg:justify-between lg:border-b lg:border-gray-400 mt-10 text-gray-700 font-medium lg:text-lg"
         >
           <div class="lg:flex -mb-px">
             <a
-              href="/resume.html"
+              href="/book"
               class="block pb-6 border-b border-transparent lg:mt-0 lg:mr-8 hover:text-gray-900"
-              >Resume</a
+              >Book</a
             >
             <a
-              href="/projects.html"
-              class="block pb-6 border-b border-transparent lg:mt-0 lg:mr-8 hover:text-gray-900"
+              href="/projects"
+              class="block pb-6 border-b border-transparent lg:mt-0 lg:mr-8 hover:text-gray-900 nuxt-link-exact-active text-gray-900 lg:border-gray-900"
               >Projects</a
             >
             <a
-              href="/extracurricular.html"
+              href="/interviews"
               class="block pb-6 border-b border-transparent lg:mt-0 lg:mr-8 hover:text-gray-900"
-              >Extra Curricular</a
+              >Interviews</a
+            >
+            <a
+              href="/speaking"
+              class="block pb-6 border-b border-transparent lg:mt-0 lg:mr-8 hover:text-gray-900"
+              >Speaking</a
             >
           </div>
           <div class="lg:flex">
             <a
-              href="https://www.linkedin.com/in/sachinkharel/"
+              href="https://twitter.com/steveschoger"
               class="block lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900"
             >
-              <div>Linkedin</div>
+              <div>Twitter</div>
               <svg
                 width="25"
                 height="25"
@@ -76,10 +81,10 @@
               </svg>
             </a>
             <a
-              href="https://www.upwork.com/freelancers/~0117d1edb43e3c7f21"
+              href="https://www.youtube.com/channel/UCxqiDtkXtOCNJdckODHk9YA"
               class="block mt-6 lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900"
             >
-              <div>Upwork</div>
+              <div>YouTube</div>
               <svg
                 width="25"
                 height="25"
@@ -94,10 +99,10 @@
               </svg>
             </a>
             <a
-              href="https://github.com/sachinkharel"
+              href="https://www.instagram.com/steveschoger/"
               class="block mt-6 lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900"
             >
-              <div>Github</div>
+              <div>Instagram</div>
               <svg
                 width="25"
                 height="25"
@@ -113,48 +118,42 @@
             </a>
           </div>
         </div>
-      </nav>
-      <main>
-        <div
-          class="text-xl sm:text-2xl md:text-3xl lg:text-4xl md:font-light text-gray-700"
-        >
-          <p class="mt-10">
-            Hey! I’m Sachin Kharel, a digital creator with a problem-solving
-            mindset and a passion for building things.
-          </p>
-          <p class="mt-6 sm:mt-8 md:mt-10">
-            I'm currently a student at
-            <a
-              href="https://utas.edu.au"
-              class="border-b border-gray-900 pb-px md:pb-1 text-gray-900"
-              >Univeristy of Tasmania</a
-            >
-            pursuing Masters in Information Technology and Systems.
-          </p>
-          <p class="mt-6 sm:mt-8 md:mt-10">
-            I have two years of experience as a Digital (Web Development)
-            Project Manager at
-            <a
-              href="https://toorly.com"
-              class="border-b border-gray-900 pb-px md:pb-1 text-gray-900"
-              >TOORLY</a
-            >
-            and I also freelance creating AR effects for Instagram, Facebook,
-            TikTok, and Snapchat, helping brands boost their social media
-            presence.
-          </p>
-        </div>
-      </main>
-      <footer
-        class="border-gray-400 border-t pt-6 mt-6 sm:mt-8 md:mt-10 mb-20 text-gray-700 text-sm sm:text-base lg:text-lg"
+      </div>
+      <!-- Page Content -->
+      <div
+        class="mb-20 md:flex mt-10 lg:mt-6 items-baseline md:border-t md:border-gray-400 md:pt-2 lg:border-t-0 lg:pt-0"
       >
-        This website was built with an inspiration from
-        <a
-          href="https://www.steveschoger.com/"
-          class="border-b border-gray-900 pb-px text-gray-900"
-          >Steve Schoger
-        </a>
-      </footer>
+        <div class="w-full md:w-1/3">
+          <h2
+            class="font-medium sm:font-normal text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-900"
+          >
+            Projects
+          </h2>
+        </div>
+        <div class="w-full md:w-2/3 mt-6">
+          <div class="text-lg sm:text-xl lg:text-2xl text-gray-700">
+            <p>
+              Currently I'm working with my friend
+              <a
+                href="https://twitter.com/adamwathan"
+                class="border-b border-gray-900 pb-px text-gray-900"
+                >Adam Wathan</a
+              >
+              to help improve and grow
+              <a
+                href="https://tailwindcss.com/"
+                class="border-b border-gray-900 pb-px text-gray-900"
+                >TailwindCSS</a
+              >
+              — a utility-first CSS framework that he created.
+            </p>
+            <p class="mt-6">
+              Here are a few of my favorite projects that I've previously made:
+            </p>
+          </div>
+          <!-- Add projects here -->
+        </div>
+      </div>
     </div>
   </body>
 </html>
