@@ -19,7 +19,7 @@
           <a href="/">Sachin Kharel</a>
         </h1>
         <div class="block lg:hidden">
-          <button type="button">
+          <button type="button" id="menu-toggle">
             <svg
               width="24"
               height="24"
@@ -35,31 +35,32 @@
           </button>
         </div>
       </header>
-      <nav class="lg:block hidden mt-10">
+
+      <nav class="lg:block hidden mt-10" id="mobile-menu">
         <div
           class="w-full block lg:flex lg:justify-between lg:border-b lg:border-gray-400 text-gray-700 font-medium lg:text-lg"
         >
-          <div class="lg:flex -mb-px">
+          <div class="lg:flex -mb-px flex-wrap">
             <a
               href="/resume.html"
-              class="block pb-6 border-b border-transparent lg:mt-0 lg:mr-8 hover:text-gray-900"
+              class="block pb-6 border-b border-transparent lg:mt-0 lg:mr-8 hover:text-gray-900 w-1/3 sm:w-auto"
               >Resume</a
             >
             <a
               href="/projects.html"
-              class="block pb-6 border-b border-transparent lg:mt-0 lg:mr-8 hover:text-gray-900"
+              class="block pb-6 border-b border-transparent lg:mt-0 lg:mr-8 hover:text-gray-900 w-1/3 sm:w-auto"
               >Projects</a
             >
             <a
               href="/extracurricular.html"
-              class="block pb-6 border-b border-transparent lg:mt-0 lg:mr-8 hover:text-gray-900"
+              class="block pb-6 border-b border-transparent lg:mt-0 lg:mr-8 hover:text-gray-900 w-1/3 sm:w-auto"
               >Extra Curricular</a
             >
           </div>
-          <div class="lg:flex">
+          <div class="lg:flex flex-wrap">
             <a
               href="https://www.linkedin.com/in/sachinkharel/"
-              class="block lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900"
+              class="block lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900 w-1/3 sm:w-auto mt-6 lg:mt-0"
             >
               <div>Linkedin</div>
               <svg
@@ -77,7 +78,7 @@
             </a>
             <a
               href="https://www.upwork.com/freelancers/~0117d1edb43e3c7f21"
-              class="block mt-6 lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900"
+              class="block mt-6 lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900 w-1/3 sm:w-auto"
             >
               <div>Upwork</div>
               <svg
@@ -95,7 +96,7 @@
             </a>
             <a
               href="https://github.com/sachinkharel"
-              class="block mt-6 lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900"
+              class="block mt-6 lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900 w-1/3 sm:w-auto"
             >
               <div>Github</div>
               <svg
@@ -114,22 +115,58 @@
           </div>
         </div>
       </nav>
+
       <div
         class="sm:text-xl md:text-2xl lg:text-3xl md:font-light text-gray-700 leading-normal"
       >
         <p class="mt-10 leading-normal">
           Hi! I’m Sachin Kharel, a digital creator with a problem-solving
-          mindset and a passion for building things.
+          mindset and a passion for building things - whether it's technology
+          💻, communities 🌍, or personal strength at the gym 🏋️.
         </p>
         <p class="mt-6 sm:mt-8 md:mt-10 leading-normal">
-          I'm currently a student at
+          I’m currently pursuing a Master’s in Information Technology and
+          Systems at the
           <a
             href="https://utas.edu.au"
             class="border-b border-gray-900 pb-px md:pb-1 text-gray-900"
-            >Univeristy of Tasmania</a
+            >University of Tasmania</a
           >
-          pursuing Masters in Information Technology and Systems.
+          🎓, proudly serving as a 2025
+          <a
+            href="https://www.hobartcity.com.au/Community/Community-programs/Hobart-Welcomes-All/International-Student-Ambassador-Program"
+            class="border-b border-gray-900 pb-px md:pb-1 text-gray-900"
+            >International Student Ambassador</a
+          >
+          for the City of Hobart
+          <img
+            src="cityofhobart.png"
+            alt="HCC"
+            style="
+              height: 1em;
+              width: auto;
+              display: inline;
+              vertical-align: middle;
+            "
+          />
+          , and organizing
+          <a
+            href="https://gdg.community.dev/gdg-hobart/"
+            class="border-b border-gray-900 pb-px md:pb-1 text-gray-900"
+            >Google Developers Group (GDG) Hobart</a
+          >
+          <img
+            src="gdg.png"
+            alt="GDG"
+            style="
+              height: 1em;
+              width: auto;
+              display: inline;
+              vertical-align: middle;
+            "
+          />.
         </p>
+
         <p class="mt-6 sm:mt-8 md:mt-10 leading-normal">
           I have two years of experience as a Digital (Web Development) Project
           Manager at
@@ -138,9 +175,14 @@
             class="border-b border-gray-900 pb-px md:pb-1 text-gray-900"
             >TOORLY</a
           >
-          and I also freelance creating AR effects on Instagram, Facebook,
-          TikTok, and Snapchat, helping brands boost their social media
-          presence.
+          and I also
+          <a
+            href="https://www.upwork.com/freelancers/~0117d1edb43e3c7f21"
+            class="border-b border-gray-900 pb-px md:pb-1 text-gray-900"
+            >freelance</a
+          >
+          creating AR effects on Instagram, Facebook, TikTok, and Snapchat 📱,
+          helping brands boost their social media presence 🚀.
         </p>
       </div>
       <footer
@@ -156,3 +198,12 @@
     </div>
   </body>
 </html>
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
