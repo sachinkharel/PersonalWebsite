@@ -19,7 +19,7 @@
         >
           <a href="/">Sachin Kharel</a>
         </h1>
-        <div class="block lg:hidden">
+        <div class="block lg:hidden" id="menu-toggle">
           <button type="button">
             <svg
               width="24"
@@ -38,14 +38,14 @@
       </header>
 
       <!-- Navigation -->
-      <nav class="lg:block hidden mt-10">
+      <nav class="lg:block hidden mt-10" id="mobile-menu">
         <div
           class="w-full block lg:flex lg:justify-between lg:border-b lg:border-gray-400 text-gray-700 font-medium lg:text-lg"
         >
           <div class="lg:flex -mb-px">
             <a
               href="/resume.html"
-              class="block pb-6 border-b-2 border-gray-900 hover:text-gray-900 lg:mt-0 lg:mr-8"
+              class="block pb-6 lg:border-b-2 lg:border-gray-900 hover:text-gray-900 lg:mt-0 lg:mr-8"
               >Resume</a
             >
             <a
@@ -119,11 +119,11 @@
       </nav>
 
       <!-- Resume Content -->
-      <main
+      <!-- <main
         class="sm:text-small md:text-large lg:text-xl md:font-light text-gray-700 leading-normal mt-10"
-      >
-        <!-- Education Section -->
-        <section>
+      > -->
+      <!-- Education Section -->
+      <!-- <section>
           <h2 class="text-2xl font-semibold">Education</h2>
           <div class="mt-4">
             <p><strong>University of Tasmania</strong>, Hobart, Australia</p>
@@ -137,10 +137,10 @@
               B.Tech in Computer Science and Engineering (Aug 2022) - CGPA: 8.4
             </p>
           </div>
-        </section>
+        </section> -->
 
-        <!-- Experience Section -->
-        <section class="mt-10">
+      <!-- Experience Section -->
+      <!-- <section class="mt-10">
           <h2 class="text-2xl font-semibold">Experience</h2>
           <div class="mt-4">
             <p><strong>Woolworths Supermarket</strong>, Hobart, Australia</p>
@@ -185,10 +185,10 @@
               </li>
             </ul>
           </div>
-        </section>
+        </section> -->
 
-        <!-- Skills Section -->
-        <section class="mt-10">
+      <!-- Skills Section -->
+      <!-- <section class="mt-10">
           <h2 class="text-2xl font-semibold">Skills & Interests</h2>
           <p class="mt-4 text-gray-700">
             <strong>Technical:</strong> HTML, CSS, React.js, MySQL, Python,
@@ -198,10 +198,10 @@
             <strong>Interests:</strong> AR Design, Fitness, Charity for
             underprivileged communities
           </p>
-        </section>
+        </section> -->
 
-        <!-- Projects Section -->
-        <section class="mt-10">
+      <!-- Projects Section -->
+      <!-- <section class="mt-10">
           <h2 class="text-2xl font-semibold">Projects</h2>
           <div class="mt-4">
             <p><strong>Indisches Restaurant Ganesha</strong></p>
@@ -216,10 +216,10 @@
               users.
             </p>
           </div>
-        </section>
+        </section> -->
 
-        <!-- Leadership & Activities Section -->
-        <section class="mt-10 mb-10">
+      <!-- Leadership & Activities Section -->
+      <!-- <section class="mt-10 mb-10">
           <h2 class="text-2xl font-semibold">Leadership & Activities</h2>
           <div class="mt-4">
             <p>
@@ -240,7 +240,7 @@
             </p>
           </div>
         </section>
-      </main>
+      </main> -->
 
       <!-- Footer -->
       <!-- <footer class="border-gray-400 border-t pt-6 mt-6 text-gray-700 text-sm">
@@ -254,3 +254,11 @@
     </div>
   </body>
 </html>
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>

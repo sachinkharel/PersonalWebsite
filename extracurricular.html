@@ -19,7 +19,7 @@
         >
           <a href="/">Sachin Kharel</a>
         </h1>
-        <div class="block lg:hidden">
+        <div class="block lg:hidden" id="menu-toggle">
           <button type="button">
             <svg
               width="24"
@@ -38,7 +38,7 @@
       </header>
 
       <!-- Navigation -->
-      <nav class="lg:block hidden mt-10">
+      <nav class="lg:block hidden mt-10" id="mobile-menu">
         <div
           class="w-full block lg:flex lg:justify-between lg:border-b lg:border-gray-400 text-gray-700 font-medium lg:text-lg"
         >
@@ -55,7 +55,7 @@
             >
             <a
               href="/extracurricular.html"
-              class="block pb-6 border-b-2 border-gray-900 lg:mt-0 lg:mr-8 hover:text-gray-900"
+              class="block pb-6 lg:border-b-2 lg:border-gray-900 lg:mt-0 lg:mr-8 hover:text-gray-900"
               >Extra Curricular</a
             >
           </div>
@@ -120,3 +120,11 @@
     </div>
   </body>
 </html>
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
