@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body class="antialiased leading-normal">
     <div class="max-w-5xl mx-auto px-6 md:px-8">
@@ -63,6 +67,7 @@
             <a
               href="https://www.linkedin.com/in/sachinkharel/"
               class="block lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900"
+              target="_blank"
             >
               <div>Linkedin</div>
               <svg
@@ -81,6 +86,7 @@
             <a
               href="https://www.upwork.com/freelancers/~0117d1edb43e3c7f21"
               class="block mt-6 lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900"
+              target="_blank"
             >
               <div>Upwork</div>
               <svg
@@ -99,6 +105,7 @@
             <a
               href="https://github.com/sachinkharel"
               class="block mt-6 lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900"
+              target="_blank"
             >
               <div>Github</div>
               <svg
@@ -117,7 +124,159 @@
           </div>
         </div>
       </nav>
+      <!-- Extracurricular Section -->
+      <section class="mt-10">
+        <div class="text-lg sm:text-xl lg:text-2xl text-gray-700 mt-10">
+          <p>International Student Ambassador Program Induction Day</p>
+        </div>
+
+        <!-- Swiper Carousel -->
+        <div class="mt-6">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide flex justify-center">
+                <img
+                  src="isap.jpeg"
+                  alt="Event 1"
+                  class="max-w-xs rounded-lg shadow-md"
+                />
+              </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next w-2 h-2"></div>
+            <div class="swiper-button-prev w-2 h-2"></div>
+            <!-- Pagination Dots -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-10">
+        <div class="text-lg sm:text-xl lg:text-2xl text-gray-700 mt-10">
+          <p>GDG Panel Discussion Event</p>
+        </div>
+
+        <!-- Swiper Carousel -->
+        <div class="mt-6">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide flex justify-center">
+                <img
+                  src="pd2.jpeg"
+                  alt="Event 1"
+                  class="max-w-xs rounded-lg shadow-md"
+                />
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <img
+                  src="pd4.jpeg"
+                  alt="Event 1"
+                  class="max-w-xs rounded-lg shadow-md"
+                />
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <img
+                  src="pd5.jpeg"
+                  alt="Event 1"
+                  class="max-w-xs rounded-lg shadow-md"
+                />
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <img
+                  src="pd3.jpeg"
+                  alt="Event 1"
+                  class="max-w-xs rounded-lg shadow-md"
+                />
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <img
+                  src="pd1.jpeg"
+                  alt="Event 1"
+                  class="max-w-xs rounded-lg shadow-md"
+                />
+              </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next w-2 h-2"></div>
+            <div class="swiper-button-prev w-2 h-2"></div>
+            <!-- Pagination Dots -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-10">
+        <div class="text-lg sm:text-xl lg:text-2xl text-gray-700 mt-10">
+          <p>Chepang Charity Show</p>
+        </div>
+
+        <!-- Swiper Carousel -->
+        <div class="mt-6">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide flex justify-center">
+                <img
+                  src="ccs1.jpg"
+                  alt="Event 1"
+                  class="max-w-xs rounded-lg shadow-md"
+                />
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <img
+                  src="ccs2.JPG"
+                  alt="Event 1"
+                  class="max-w-xs rounded-lg shadow-md"
+                />
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <img
+                  src="ccs3.jpg"
+                  alt="Event 1"
+                  class="max-w-xs rounded-lg shadow-md"
+                />
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <img
+                  src="ccs4.jpg"
+                  alt="Event 1"
+                  class="max-w-xs rounded-lg shadow-md"
+                />
+              </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next w-2 h-2"></div>
+            <div class="swiper-button-prev w-2 h-2"></div>
+            <!-- Pagination Dots -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        class="border-gray-400 border-t pt-6 mt-6 sm:mt-6 md:mt-6 mb-6 text-gray-700 text-sm sm:text-base lg:text-sm"
+      ></footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true, // Enables infinite loop
+        autoplay: {
+          delay: 5000, // Auto-slide every 5 seconds
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next ",
+          prevEl: ".swiper-button-prev ",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
 <script>
