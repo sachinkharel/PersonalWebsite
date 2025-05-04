@@ -54,12 +54,22 @@
     }
   ],
   "Skills & Interests": {
-    "technical": [" React.js", " Bootstrap", " MySQL", " Python", " PHP"],
+    "technical": [
+      " React.js",
+      " Bootstrap",
+      " MySQL",
+      " Python",
+      " PHP"
+    ],
     "languages": [
       "English & Hindi (Professional Proficiency)",
       " Nepali (Native)"
     ],
-    "interests": [" AR Design", " Fitness", " Social Impact & Charity "]
+    "interests": [
+      " AR Design",
+      " Fitness",
+      " Social Impact & Charity "
+    ]
   },
   "Leadership & Activities": [
     {
@@ -127,7 +137,9 @@
       "title": "Indisches Restaurant Ganesha",
       "duration": "June 2022",
       "description": [
-        "Frontend website developed with React and its styled components for initiating digital footprint of the restaurant. Hosted on Netlify, domain from GoDaddy."
+        "Frontend website developed with React and its styled components for initiating digital footprint of the restaurant. Hosted on Netlify, domain from GoDaddy.",
+        "Referred by:\n\nSubodh Kharel (Spot Market Analyst)",
+        "subodh.kharel@hydro.com.au"
       ],
       "link": "https://restaurantganeshaburghausen.de/"
     }
