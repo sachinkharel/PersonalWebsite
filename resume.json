@@ -115,7 +115,7 @@
         "Deployed on Google Cloud Run with continuous integration for seamless updates.",
         "Integrated Google Analytics for user insights and behavior optimisation."
       ],
-      "link": ""
+      "link": "http://roomcha.com/"
     },
     {
       "title": "Personal Website(sachinkharel.com.np)",
@@ -137,9 +137,7 @@
       "title": "Indisches Restaurant Ganesha",
       "duration": "June 2022",
       "description": [
-        "Frontend website developed with React and its styled components for initiating digital footprint of the restaurant. Hosted on Netlify, domain from GoDaddy.",
-        "Referred by:\n\nSubodh Kharel (Spot Market Analyst)",
-        "subodh.kharel@hydro.com.au"
+        "Frontend website developed with React and its styled components for initiating digital footprint of the restaurant. Hosted on Netlify, domain from GoDaddy."
       ],
       "link": "https://restaurantganeshaburghausen.de/"
     }
