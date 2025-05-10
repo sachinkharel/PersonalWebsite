@@ -183,7 +183,7 @@
           .then((response) => response.json())
           .then((data) => {
             // Populate Education Section
-            const educationContent = data.Education.map((entry) => {
+            const educationContent = data.sections.Education.entries.map((entry) => {
               return `
                 <li class="mb-6 text-lg">
                   <a href="${entry.link}" target="_blank" style="display: inline-flex; align-items: center; color: #2b6cb0;">
@@ -203,7 +203,7 @@
 
 
             // Populate Experience Section
-            const experienceContent = data.Experience.map((entry) => {
+            const experienceContent = data.sections.Experience.entries.map((entry) => {
               return `
                 <li class="mb-6 text-lg">
                     ${entry.title}       
@@ -229,21 +229,16 @@
 
 
             // Populate Skills Section
+            const skillsData = data.sections["Skills & Interests"].entries[0];
             const skillsContent = `
-              <strong>Technical Skills:</strong> ${data[
-                "Skills & Interests"
-              ].technical.join(", ")}<br />
-              <strong>Languages:</strong> ${data[
-                "Skills & Interests"
-              ].languages.join(", ")}<br />
-              <strong>Interests:</strong> ${data[
-                "Skills & Interests"
-              ].interests.join(", ")}
-            `;
+                <strong>Technical Skills:</strong> ${skillsData.technical.join(", ")}<br />
+                <strong>Languages:</strong> ${skillsData.languages.join(", ")}<br />
+                <strong>Interests:</strong> ${skillsData.interests.join(", ")}
+              `;
             document.getElementById("skills-content").innerHTML = skillsContent;
 
             // Populate Projects Section
-            const projectsContent = data.Projects.map((project) => {
+            const projectsContent = data.sections.Projects.entries.map((project) => {
               return `
                <li class="mb-6 text-lg">
                   <strong>
@@ -265,7 +260,8 @@
             document.getElementById("projects-list").innerHTML = projectsContent;
 
           // Populate Leadership & Activities Section
-          const leadershipContent = data["Leadership & Activities"].map((activity) => {
+          const leadershipContent = data.sections["Leadership & Activities"].entries.map((activity) => {
+
             return `
               <li class="mb-6 text-lg">
                 <strong>
