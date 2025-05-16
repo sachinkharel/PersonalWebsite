@@ -28,7 +28,7 @@
           "title": "Front End Team Member",
           "company": "Woolworths Supermarket",
           "location": "Hobart CBD, Australia",
-          "duration": "Sep 2024 - Present",
+          "duration": "Sep 2024 \u2013 April 2025",
           "description": [
             "Troubleshooting checkout issues, ensuring seamless transactions while communicating effectively with diverse customers in a fast-paced environment."
           ],
@@ -64,12 +64,22 @@
       "section_type": "Skills & Interests",
       "entries": [
         {
-          "technical": [" React.js", " Bootstrap", " MySQL", " Python", " PHP"],
+          "technical": [
+            " PHP",
+            " React.js",
+            " Bootstrap",
+            " MySQL",
+            " Python"
+          ],
           "languages": [
             "English & Hindi (Professional Proficiency)",
             " Nepali (Native)"
           ],
-          "interests": [" AR Design", " Fitness", " Social Impact & Charity "]
+          "interests": [
+            " AR Design",
+            " Fitness",
+            " Social Impact & Charity "
+          ]
         }
       ]
     },
