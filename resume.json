@@ -25,6 +25,21 @@
       "section_type": "Experience",
       "entries": [
         {
+          "title": "Web Developer",
+          "company": "Eighty Options",
+          "location": "Hobart CBD, Australia",
+          "duration": "May 2025 \u2013 Present",
+          "description": [
+            "Developing enterprise-grade web applications using Drupal Core as a PHP framework.",
+            "Utilizing Docker containers for consistent development and deployment environments.",
+            "Working with GitLab for version control, issue tracking, and CI/CD workflows.",
+            "Implementing backend logic, developing custom modules, and maintaining clean, scalable codebases.",
+            "Collaborating with a cross-functional team to scope, prioritise, and deliver tickets effectively through sprint cycles.",
+            "Writing and maintaining documentation for development workflows, code standards, and deployment procedures."
+          ],
+          "link": "https://www.eightyoptions.com/"
+        },
+        {
           "title": "Front End Team Member",
           "company": "Woolworths Supermarket",
           "location": "Hobart CBD, Australia",
